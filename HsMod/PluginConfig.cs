@@ -59,8 +59,9 @@ namespace HsMod
         public static ConfigEntry<bool> isShutUpBobEnable;
         public static ConfigEntry<bool> isBgsGoldenEnable;
         public static ConfigEntry<bool> isBgsSeasonTicketUnlock;
+        public static ConfigEntry<bool> isBgsUnlockCollectionEnable;
 
-        
+
         public static ConfigEntry<bool> isPatchAssetLoader;
         public static ConfigEntry<bool> shieldMainBoxLuckyDraw;
         // 卡牌原画导出
@@ -247,6 +248,7 @@ namespace HsMod
             isShutUpBobEnable = config.Bind(LocalizationManager.GetLangValue("isShutUpBobEnable.label"), LocalizationManager.GetLangValue("isShutUpBobEnable.name"), false, LocalizationManager.GetLangValue("isShutUpBobEnable.description"));
             isBgsGoldenEnable = config.Bind(LocalizationManager.GetLangValue("isBgsGoldenEnable.label"), LocalizationManager.GetLangValue("isBgsGoldenEnable.name"), false, LocalizationManager.GetLangValue("isBgsGoldenEnable.description"));
             isBgsSeasonTicketUnlock = config.Bind(LocalizationManager.GetLangValue("isBgsSeasonTicketUnlock.label"), LocalizationManager.GetLangValue("isBgsSeasonTicketUnlock.name"), false, LocalizationManager.GetLangValue("isBgsSeasonTicketUnlock.description"));
+            isBgsUnlockCollectionEnable = config.Bind(LocalizationManager.GetLangValue("isBgsUnlockCollectionEnable.label"), LocalizationManager.GetLangValue("isBgsUnlockCollectionEnable.name"), false, LocalizationManager.GetLangValue("isBgsUnlockCollectionEnable.description"));
             isPatchAssetLoader = config.Bind(LocalizationManager.GetLangValue("isPatchAssetLoader.label"), LocalizationManager.GetLangValue("isPatchAssetLoader.name"), false, LocalizationManager.GetLangValue("isPatchAssetLoader.description"));
             shieldMainBoxLuckyDraw = config.Bind(LocalizationManager.GetLangValue("shieldMainBoxLuckyDraw.label"), LocalizationManager.GetLangValue("shieldMainBoxLuckyDraw.name"), false, LocalizationManager.GetLangValue("shieldMainBoxLuckyDraw.description"));
             SaveCardTextures = config.Bind(LocalizationManager.GetLangValue("SaveCardTextures.label"), LocalizationManager.GetLangValue("SaveCardTextures.name"), false, LocalizationManager.GetLangValue("SaveCardTextures.description"));
